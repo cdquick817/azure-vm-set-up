@@ -43,9 +43,18 @@ While still in Azure, select "Virtual Machine" from Azure Services, if shown, or
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/tj9ELoz.png" height="80%" width="80%" alt="Virtual Network"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+During the course of creating your first VM--regardless of whether the Windows or Ubuntu is selected first--you will create a Virtual Network. Select "Networking" at the top of the page or click "Next" at the bottom until you arrive at "Networking" settings. While creating your first VM, you can allow a Virtual Network to be created automatically, along with a Public IP. If you prefer a specific name, enter it in the "Virtual network" field. However, when you create your second VM, you will need to select the Virtual Network that was created with the first VM. The pic above shows the second VM being created (notice the new Public IP), with the first Virtual Network chosen from the drop-down menu. If you do not allow enough time for the first VM/resource to be deployed in Azure, you may not see the originally-created Virtual Network available to be selected. Allow more time before proceeding as you will not be able to monitor network traffic if each VM is part of separate Virtual networks.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/f4Ogkbi.png" height="80%" width="80%" alt="Resource Group View"/>
+<img src="https://i.imgur.com/Qc4zrRo.png" height="80%" width="80%" alt="VM Settings"/>
+</p>
+<p>
+After creating both VMs and the one Virtual Network, you can select "Home" or re-enter the portal.azure.com URL. Select your Resource Group. What you see above are the Resource Group resources that were created. Below that, you see VM-1 information. Selecting either Virtual Machine will allow you to view the "Public IP address" necessary to connect via Remote Desktop Connection. Use RDP to connect to each machine by employing the username/password chosen at creation, allowing you to toggle back-and-forth performing and viewing desired network activities (to include installing Wireshark on the Windows VM to view test commands from the Ubuntu VM).
 </p>
 <br />
